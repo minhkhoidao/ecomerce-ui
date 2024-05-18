@@ -1,16 +1,16 @@
 "use client";
 
-import "./styles/index.css";
+import LikeSaveBtns from "@/components/LikeSaveBtns";
+import { Dialog, Transition } from "@headlessui/react";
+import { ArrowSmallLeftIcon } from "@heroicons/react/24/outline";
+import { Route } from "next";
 import Image from "next/image";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import { FC, Fragment, useEffect, useRef } from "react";
+import { FC, Fragment, Suspense, useEffect, useRef } from "react";
 import Modal from "./components/Modal";
+import "./styles/index.css";
 import type { ListingGalleryImage } from "./utils/types";
 import { useLastViewedPhoto } from "./utils/useLastViewedPhoto";
-import { ArrowSmallLeftIcon } from "@heroicons/react/24/outline";
-import { Dialog, Transition } from "@headlessui/react";
-import LikeSaveBtns from "@/components/LikeSaveBtns";
-import { Route } from "next";
 
 export const getNewParam = ({
   paramName = "photoId",
@@ -96,7 +96,7 @@ const ListingImageGallery: FC<Props> = ({ images, onClose, isShowModal }) => {
   };
 
   return (
-    <>
+    <Suspense fallback={<>Loading...</>}>
       <Transition appear show={isShowModal} as={Fragment}>
         <Dialog as="div" className="relative z-40" onClose={handleClose}>
           <Transition.Child
@@ -140,7 +140,7 @@ const ListingImageGallery: FC<Props> = ({ images, onClose, isShowModal }) => {
           </div>
         </Dialog>
       </Transition>
-    </>
+    </Suspense>
   );
 };
 

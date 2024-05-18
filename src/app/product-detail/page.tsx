@@ -1,32 +1,32 @@
 "use client";
 
-import React, { FC, useState } from "react";
-import ButtonPrimary from "@/shared/Button/ButtonPrimary";
-import LikeButton from "@/components/LikeButton";
-import { StarIcon } from "@heroicons/react/24/solid";
+import AccordionInfo from "@/components/AccordionInfo";
 import BagIcon from "@/components/BagIcon";
-import NcInputNumber from "@/components/NcInputNumber";
-import { PRODUCTS } from "@/data/data";
-import {
-  NoSymbolIcon,
-  ClockIcon,
-  SparklesIcon,
-} from "@heroicons/react/24/outline";
 import IconDiscount from "@/components/IconDiscount";
+import LikeButton from "@/components/LikeButton";
+import NcInputNumber from "@/components/NcInputNumber";
+import NotifyAddTocart from "@/components/NotifyAddTocart";
 import Prices from "@/components/Prices";
-import toast from "react-hot-toast";
+import ReviewItem from "@/components/ReviewItem";
+import SectionPromo2 from "@/components/SectionPromo2";
 import SectionSliderProductCard from "@/components/SectionSliderProductCard";
+import { PRODUCTS } from "@/data/data";
 import detail1JPG from "@/images/products/detail1.jpg";
 import detail2JPG from "@/images/products/detail2.jpg";
 import detail3JPG from "@/images/products/detail3.jpg";
-import Policy from "./Policy";
-import ReviewItem from "@/components/ReviewItem";
+import ButtonPrimary from "@/shared/Button/ButtonPrimary";
 import ButtonSecondary from "@/shared/Button/ButtonSecondary";
-import SectionPromo2 from "@/components/SectionPromo2";
-import ModalViewAllReviews from "./ModalViewAllReviews";
-import NotifyAddTocart from "@/components/NotifyAddTocart";
+import {
+  ClockIcon,
+  NoSymbolIcon,
+  SparklesIcon,
+} from "@heroicons/react/24/outline";
+import { StarIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
-import AccordionInfo from "@/components/AccordionInfo";
+import { useState } from "react";
+import toast from "react-hot-toast";
+import ModalViewAllReviews from "./ModalViewAllReviews";
+import Policy from "./Policy";
 
 const LIST_IMAGES_DEMO = [detail1JPG, detail2JPG, detail3JPG];
 
