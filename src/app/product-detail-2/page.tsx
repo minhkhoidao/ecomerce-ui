@@ -51,9 +51,8 @@ const ProductDetailPage2 = () => {
   //
   const router = useRouter();
   const thisPathname = usePathname();
-  const searchParams = useSearchParams();
-  const modal = searchParams?.get("modal");
-  //
+
+  const [modal, setModal] = useState("PHOTO_TOUR_SCROLLABLE");
   const [variantActive, setVariantActive] = useState(0);
   const [sizeSelected, setSizeSelected] = useState(sizes ? sizes[0] : "");
   const [qualitySelected, setQualitySelected] = useState(1);
@@ -67,7 +66,7 @@ const ProductDetailPage2 = () => {
     router.push(`${thisPathname}/?${params.toString()}` as Route);
   };
   const handleOpenModalImageGallery = () => {
-    router.push(`${thisPathname}/?modal=PHOTO_TOUR_SCROLLABLE` as Route);
+    router.push(`${thisPathname}/?modal=${modal}` as Route);
   };
 
   //
