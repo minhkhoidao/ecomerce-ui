@@ -1,7 +1,7 @@
+import "@/fonts/line-awesome-1.3.0/css/line-awesome.min.css";
+import "@/styles/index.scss";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
-import "@/fonts/line-awesome-1.3.0/css/line-awesome.css";
-import "@/styles/index.scss";
 import "rc-slider/assets/index.css";
 import "./globals.css";
 

@@ -1,21 +1,20 @@
-import React from "react";
-import SectionHowItWork from "@/components/SectionHowItWork/SectionHowItWork";
+import SectionMagazine5 from "@/app/blog/SectionMagazine5";
 import BackgroundSection from "@/components/BackgroundSection/BackgroundSection";
-import SectionPromo1 from "@/components/SectionPromo1";
+import DiscoverMoreSlider from "@/components/DiscoverMoreSlider";
+import Heading from "@/components/Heading/Heading";
+import SectionClientSay from "@/components/SectionClientSay/SectionClientSay";
+import SectionGridFeatureItems from "@/components/SectionGridFeatureItems";
+import SectionGridMoreExplore from "@/components/SectionGridMoreExplore/SectionGridMoreExplore";
 import SectionHero2 from "@/components/SectionHero/SectionHero2";
+import SectionHowItWork from "@/components/SectionHowItWork/SectionHowItWork";
+import SectionPromo1 from "@/components/SectionPromo1";
+import SectionPromo2 from "@/components/SectionPromo2";
+import SectionPromo3 from "@/components/SectionPromo3";
+import SectionSliderCategories from "@/components/SectionSliderCategories/SectionSliderCategories";
 import SectionSliderLargeProduct from "@/components/SectionSliderLargeProduct";
 import SectionSliderProductCard from "@/components/SectionSliderProductCard";
-import DiscoverMoreSlider from "@/components/DiscoverMoreSlider";
-import SectionGridMoreExplore from "@/components/SectionGridMoreExplore/SectionGridMoreExplore";
-import SectionPromo2 from "@/components/SectionPromo2";
-import SectionSliderCategories from "@/components/SectionSliderCategories/SectionSliderCategories";
-import SectionPromo3 from "@/components/SectionPromo3";
-import SectionClientSay from "@/components/SectionClientSay/SectionClientSay";
-import Heading from "@/components/Heading/Heading";
-import ButtonSecondary from "@/shared/Button/ButtonSecondary";
 import { PRODUCTS, SPORT_PRODUCTS } from "@/data/data";
-import SectionGridFeatureItems from "@/components/SectionGridFeatureItems";
-import SectionMagazine5 from "@/app/blog/SectionMagazine5";
+import ButtonSecondary from "@/shared/Button/ButtonSecondary";
 
 function PageHome() {
   return (
